@@ -1,0 +1,67 @@
+$date
+	Tue May 26 22:43:02 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ex6_tb $end
+$var wire 8 ! t [7:0] $end
+$var wire 8 " s [7:0] $end
+$var wire 8 # r [7:0] $end
+$var reg 16 $ din [15:0] $end
+$scope module uut $end
+$var wire 16 % data_in [15:0] $end
+$var wire 16 & round_add [15:0] $end
+$var wire 16 ' rounded_full [15:0] $end
+$var wire 8 ( data_trunc [7:0] $end
+$var wire 8 ) data_round [7:0] $end
+$var parameter 33 * DISCARD_LSBS $end
+$var parameter 32 + IN_WIDTH $end
+$var parameter 8 , MAX_VAL $end
+$var parameter 8 - MIN_VAL $end
+$var parameter 32 . OUT_WIDTH $end
+$var reg 8 / data_sat [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 .
+b10000000 -
+b1111111 ,
+b10000 +
+b1000 *
+$end
+#0
+$dumpvars
+b1111111 /
+b1 )
+b0 (
+b101111111 '
+b10000000 &
+b11111111 %
+b11111111 $
+b1 #
+b1111111 "
+b0 !
+$end
+#10000
+b1111111 !
+b1111111 (
+b10000000 #
+b10000000 )
+b1000000001111111 '
+b111111111111111 $
+b111111111111111 %
+#20000
+b10000000 "
+b10000000 /
+b10000000 !
+b10000000 (
+b1000000010000000 '
+b1000000000000000 $
+b1000000000000000 %
+#30000

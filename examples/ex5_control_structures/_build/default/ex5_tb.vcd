@@ -1,0 +1,62 @@
+$date
+	Tue May 26 22:42:07 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ex5_tb $end
+$var wire 1 ! zero $end
+$var wire 4 " res [3:0] $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 3 % op [2:0] $end
+$scope module uut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 3 ( opcode [2:0] $end
+$var parameter 3 ) OP_ADD $end
+$var parameter 3 * OP_AND $end
+$var parameter 3 + OP_NOT $end
+$var parameter 3 , OP_OR $end
+$var parameter 3 - OP_SUB $end
+$var parameter 3 . OP_XOR $end
+$var reg 4 / result [3:0] $end
+$var reg 1 ! zero_flag $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 .
+b1 -
+b11 ,
+b101 +
+b10 *
+b0 )
+$end
+#0
+$dumpvars
+b110 /
+b0 (
+b10 '
+b100 &
+b0 %
+b10 $
+b100 #
+b110 "
+0!
+$end
+#10000
+b10 "
+b10 /
+b1 %
+b1 (
+#20000
+b1011 "
+b1011 /
+b101 %
+b101 (
+#30000

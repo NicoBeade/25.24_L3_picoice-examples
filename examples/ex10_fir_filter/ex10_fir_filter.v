@@ -49,11 +49,13 @@ module fir_filter #(
     wire signed [IN_WIDTH-1:0] tap2 = flat_taps[3*IN_WIDTH-1 : 2*IN_WIDTH];
     wire signed [IN_WIDTH-1:0] tap3 = flat_taps[4*IN_WIDTH-1 : 3*IN_WIDTH];
 
+    /*
     wire signed [MULT_WIDTH-1:0] prod0 = tap0 * h[0];
     wire signed [MULT_WIDTH-1:0] prod1 = tap1 * h[1];
     wire signed [MULT_WIDTH-1:0] prod2 = tap2 * h[2];
     wire signed [MULT_WIDTH-1:0] prod3 = tap3 * h[3];
 
+    
     // Pack products to send them to the adder_tree
     wire [(MULT_WIDTH * TAPS) - 1 : 0] flat_prods;
     assign flat_prods = {prod3, prod2, prod1, prod0};
@@ -67,6 +69,15 @@ module fir_filter #(
         .flat_inputs(flat_prods),
         .sum_out(sum_wire)
     );
+    */
+
+    // Podemos aprovechar la simetria de los coeficientes para reducir el numero de multiplicaciones
+    wire signed [MULT_WIDTH-1:0] prod01 = (tap0 + tap3) * h[0]; // h[0] = h[3]
+
+    wire signed [MULT_WIDTH-1:0] prod12 = (tap1 + tap2) * h[1]; // h[1] = h[2]
+
+    //Hacemos la suma agregando 1 bit para evitar overflow
+    wire signed [MULT_WIDTH + 1 : 0] sum_wire = prod01 + prod12; 
 
     // --- 4. Register Output ---
     always @(posedge clk) begin

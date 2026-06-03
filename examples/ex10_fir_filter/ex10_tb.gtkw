@@ -1,0 +1,13 @@
+[*] GTKWave display configuration for 'apio sim ex10_tb.v'
+[*] THIS FILE WAS GENERATED AUTOMATICALLY BY APIO.
+[*] DO NOT EDIT IT MANUALLY!
+[*] To customize this file, run 'apio sim ex10_tb.v'
+[*] and save the file from GTKWave.
+
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+
+[*]
+ex10_tb.clk
+ex10_tb.din[7:0]
+ex10_tb.dout[17:0]
+ex10_tb.rst

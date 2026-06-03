@@ -1,0 +1,37 @@
+$date
+	Tue May 26 22:40:54 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ex4_tb $end
+$var wire 8 ! dout [7:0] $end
+$var reg 8 " din [7:0] $end
+$scope module uut $end
+$var wire 8 # data_in [7:0] $end
+$var reg 8 $ data_out_reversed [7:0] $end
+$var integer 32 % i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1000 %
+b11000101 $
+b10100011 #
+b10100011 "
+b11000101 !
+$end
+#10000
+b1000 %
+b1111 !
+b1111 $
+b11110000 "
+b11110000 #
+#20000

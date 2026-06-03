@@ -1,0 +1,91 @@
+$date
+	Tue May 26 23:22:24 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ex11_tb $end
+$var wire 32 ! acc [31:0] $end
+$var reg 16 " a [15:0] $end
+$var reg 16 # b [15:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % clr $end
+$var reg 1 & rst $end
+$scope module uut $end
+$var wire 16 ' a [15:0] $end
+$var wire 16 ( b [15:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % clr $end
+$var wire 1 & rst $end
+$var parameter 32 ) ACC_WIDTH $end
+$var parameter 32 * A_WIDTH $end
+$var parameter 32 + B_WIDTH $end
+$var reg 32 , acc [31:0] $end
+$var reg 32 - mult_reg [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 +
+b10000 *
+b100000 )
+$end
+#0
+$dumpvars
+bx -
+bx ,
+b0 (
+b0 '
+1&
+0%
+0$
+b0 #
+b0 "
+bx !
+$end
+#5000
+b0 !
+b0 ,
+b0 -
+1$
+#10000
+0$
+b101 #
+b101 (
+b1010 "
+b1010 '
+0&
+#15000
+b110010 -
+1$
+#20000
+0$
+1%
+#25000
+b110010 !
+b110010 ,
+1$
+#30000
+0$
+b11 #
+b11 (
+b10 "
+b10 '
+0%
+#35000
+b1100100 !
+b1100100 ,
+b110 -
+1$
+#40000
+0$
+#45000
+b1101010 !
+b1101010 ,
+1$
+#50000
+0$

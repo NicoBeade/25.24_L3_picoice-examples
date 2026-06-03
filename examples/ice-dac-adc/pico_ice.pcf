@@ -1,0 +1,17 @@
+# pico-ice iCE40UP5K pin constraints
+
+set_io -nowarn CLK       35
+
+# ADC I2C
+set_io I2C_SCL  43
+set_io I2C_SDA  42
+
+# DAC I2S
+set_io I2S_LRCLK  31
+set_io I2S_DIN    34
+set_io I2S_BCLK   38
+
+# RGB LED — active-low GPIO (no SB_RGBA_DRV)
+set_io LED_G  39
+set_io LED_B  40
+set_io LED_R  41

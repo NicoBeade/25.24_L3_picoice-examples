@@ -1,0 +1,98 @@
+$date
+	Tue May 26 23:18:36 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ex9_tb $end
+$var wire 32 ! taps [31:0] $end
+$var reg 1 " clk $end
+$var reg 8 # din [7:0] $end
+$var reg 1 $ rst $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 8 % data_in [7:0] $end
+$var wire 1 $ rst $end
+$var wire 32 & flat_taps [31:0] $end
+$var parameter 32 ' DATA_WIDTH $end
+$var parameter 32 ( TAPS $end
+$var integer 32 ) i [31:0] $end
+$scope begin pack[0] $end
+$var parameter 2 * j $end
+$upscope $end
+$scope begin pack[1] $end
+$var parameter 2 + j $end
+$upscope $end
+$scope begin pack[2] $end
+$var parameter 3 , j $end
+$upscope $end
+$scope begin pack[3] $end
+$var parameter 3 - j $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 -
+b10 ,
+b1 +
+b0 *
+b100 (
+b1000 '
+$end
+#0
+$dumpvars
+bx )
+bx &
+b0 %
+1$
+b0 #
+0"
+bx !
+$end
+#5000
+b0 !
+b0 &
+b100 )
+1"
+#10000
+0"
+b1010 #
+b1010 %
+0$
+#15000
+b1010 !
+b1010 &
+b0 )
+1"
+#20000
+0"
+b10100 #
+b10100 %
+#25000
+b101000010100 !
+b101000010100 &
+b0 )
+1"
+#30000
+0"
+b11110 #
+b11110 %
+#35000
+b10100001010000011110 !
+b10100001010000011110 &
+b0 )
+1"
+#40000
+0"
+#45000
+b1010000101000001111000011110 !
+b1010000101000001111000011110 &
+b0 )
+1"
+#50000
+0"

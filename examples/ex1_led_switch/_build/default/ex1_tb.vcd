@@ -1,0 +1,44 @@
+$date
+	Tue May 26 22:25:42 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ex1_tb $end
+$var wire 1 ! LED_R $end
+$var wire 1 " LED_G $end
+$var wire 1 # LED_B $end
+$var reg 1 $ ICE_SW2 $end
+$scope module uut $end
+$var wire 1 $ ICE_SW2 $end
+$var wire 1 ! LED_R $end
+$var wire 1 " LED_G $end
+$var wire 1 # LED_B $end
+$scope module inst $end
+$var wire 1 $ ICE_SW2 $end
+$var wire 1 # LED_B $end
+$var wire 1 " LED_G $end
+$var wire 1 ! LED_R $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0$
+1#
+0"
+0!
+$end
+#10000
+0#
+1"
+1!
+1$
+#20000

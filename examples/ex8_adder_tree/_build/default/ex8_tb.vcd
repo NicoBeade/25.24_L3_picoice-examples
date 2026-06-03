@@ -1,0 +1,59 @@
+$date
+	Tue May 26 23:17:46 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ex8_tb $end
+$var wire 10 ! sum [9:0] $end
+$var reg 32 " flat_in [31:0] $end
+$scope module uut $end
+$var wire 32 # flat_inputs [31:0] $end
+$var wire 10 $ sum_out [9:0] $end
+$var wire 9 % stage1_sum1 [8:0] $end
+$var wire 9 & stage1_sum0 [8:0] $end
+$var wire 10 ' final_sum [9:0] $end
+$var parameter 32 ( IN_WIDTH $end
+$var parameter 32 ) LOG2_N $end
+$var parameter 32 * NUM_INPUTS $end
+$var parameter 33 + OUT_WIDTH $end
+$scope begin unpack[0] $end
+$var parameter 2 , i $end
+$upscope $end
+$scope begin unpack[1] $end
+$var parameter 2 - i $end
+$upscope $end
+$scope begin unpack[2] $end
+$var parameter 3 . i $end
+$upscope $end
+$scope begin unpack[3] $end
+$var parameter 3 / i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 /
+b10 .
+b1 -
+b0 ,
+b1010 +
+b100 *
+b10 )
+b1000 (
+$end
+#0
+$dumpvars
+b1010 '
+b111 &
+b11 %
+b1010 $
+b1000000100000001100000100 #
+b1000000100000001100000100 "
+b1010 !
+$end
+#10000
